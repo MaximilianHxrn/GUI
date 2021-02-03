@@ -2,6 +2,7 @@ package de.nm.ltxml.core;
 
 import java.awt.Container;
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
@@ -80,10 +81,17 @@ public class EasyWindow extends JFrame {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                label.setForeground(fg);
-
+                label.setForeground(Color.YELLOW);
             }
             
         });
+
+        red.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                label.setForeground(Color.RED);
+            }
+        });
+
     }
 }
